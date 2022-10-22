@@ -1,0 +1,56 @@
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: $fontFamily;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-tap-highlight-color: transparent;
+    //overflow: hidden; // вкл, если есть прелоадер
+    &.body--lock {
+        overflow: hidden;
+    }
+    &.body--load {
+        overflow: visible;
+    }
+}
+.page-wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: $maxWidthContainer + px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.none {
+    display: none !important;
+}
+// =========================================================================================================
+
+
+// .ibg {
+//     position: relative;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+// }
+// .ibg img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0;
+//     height: 0;
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+
+// .snap {
+//     scroll-snap-type: y mandatory; // none* | [ x | y | both] [mandatory | proximity]?
+// }
+
+// .snap > * {
+//     scroll-snap-align: start; // none* | start | end | center
+// }

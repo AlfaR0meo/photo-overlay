@@ -1,0 +1,42 @@
+/* ■■■■■ ОБНУЛЯЮЩИЕ СТИЛИ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+body {
+    margin: 0;
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+    }
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+header, nav, main, footer, section, aside, 
+img, video, picture, source, iframe,
+label, summary, canvas, svg {
+    display: block;
+}
+ul, ol, li {
+    display: block;
+    list-style: none; // если блок, то уже не обязательно
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+input, textarea, button, select {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+textarea {
+    resize: vertical;
+}
+button, select {
+    cursor: pointer;
+}
